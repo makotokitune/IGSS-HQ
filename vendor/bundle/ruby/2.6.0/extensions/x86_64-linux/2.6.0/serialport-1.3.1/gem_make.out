@@ -1,0 +1,81 @@
+current directory: /home/cmnse04/IGSS/hq/vendor/bundle/ruby/2.6.0/gems/serialport-1.3.1/ext/native
+/usr/local/rbenv/versions/2.6.6/bin/ruby -I /usr/local/rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20201012-3514-198h2c3.rb extconf.rb
+checking for OS... linux
+checking for termios.h... yes
+checking for unistd.h... yes
+creating Makefile
+
+current directory: /home/cmnse04/IGSS/hq/vendor/bundle/ruby/2.6.0/gems/serialport-1.3.1/ext/native
+make "DESTDIR=" clean
+
+current directory: /home/cmnse04/IGSS/hq/vendor/bundle/ruby/2.6.0/gems/serialport-1.3.1/ext/native
+make "DESTDIR="
+compiling posix_serialport_impl.c
+posix_serialport_impl.c: 関数 ‘sp_create_impl’ 内:
+posix_serialport_impl.c:94:7: 警告: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+       "/dev/ttyS0", "/dev/ttyS1", "/dev/ttyS2", "/dev/ttyS3",
+       ^~~~~~~~~~~~
+posix_serialport_impl.c:94:21: 警告: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+       "/dev/ttyS0", "/dev/ttyS1", "/dev/ttyS2", "/dev/ttyS3",
+                     ^~~~~~~~~~~~
+posix_serialport_impl.c:94:35: 警告: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+       "/dev/ttyS0", "/dev/ttyS1", "/dev/ttyS2", "/dev/ttyS3",
+                                   ^~~~~~~~~~~~
+posix_serialport_impl.c:94:49: 警告: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+       "/dev/ttyS0", "/dev/ttyS1", "/dev/ttyS2", "/dev/ttyS3",
+                                                 ^~~~~~~~~~~~
+posix_serialport_impl.c:95:7: 警告: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+       "/dev/ttyS4", "/dev/ttyS5", "/dev/ttyS6", "/dev/ttyS7"
+       ^~~~~~~~~~~~
+posix_serialport_impl.c:95:21: 警告: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+       "/dev/ttyS4", "/dev/ttyS5", "/dev/ttyS6", "/dev/ttyS7"
+                     ^~~~~~~~~~~~
+posix_serialport_impl.c:95:35: 警告: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+       "/dev/ttyS4", "/dev/ttyS5", "/dev/ttyS6", "/dev/ttyS7"
+                                   ^~~~~~~~~~~~
+posix_serialport_impl.c:95:49: 警告: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+       "/dev/ttyS4", "/dev/ttyS5", "/dev/ttyS6", "/dev/ttyS7"
+                                                 ^~~~~~~~~~~~
+In file included from /usr/local/rbenv/versions/2.6.6/include/ruby-2.6.0/ruby.h:33,
+                 from serialport.h:24,
+                 from posix_serialport_impl.c:21:
+posix_serialport_impl.c:114:13: 警告: passing argument 1 番目の ‘rb_obj_setup’ の引数を渡すときにポインタからキャスト無しに整数を作成しています [-Wint-conversion]
+    OBJSETUP(sp, class, T_FILE);
+             ^~
+/usr/local/rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/ruby.h:785:40: 備考: in definition of macro ‘OBJSETUP’
+ #define OBJSETUP(obj,c,t) rb_obj_setup(obj, c, t) /* use NEWOBJ_OF instead of NEWOBJ()+OBJSETUP() */
+                                        ^~~
+/usr/local/rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/ruby.h:780:26: 備考: expected ‘VALUE’ {aka ‘long unsigned int’} but argument is of type ‘struct RFile *’
+ VALUE rb_obj_setup(VALUE obj, VALUE klass, VALUE type);
+                    ~~~~~~^~~
+posix_serialport_impl.c:121:39: 警告: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+          if (num_port < 0 || num_port > sizeof(ports) / sizeof(ports[0]))
+                                       ^
+In file included from /usr/local/rbenv/versions/2.6.6/include/ruby-2.6.0/ruby.h:33,
+                 from serialport.h:24,
+                 from posix_serialport_impl.c:21:
+/usr/local/rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/ruby.h:657:27: 警告: call to ‘ruby_safe_level_2_warning’ declared with attribute warning: $SAFE=2 to 4 are obsolete
+ # define rb_secure(level) rb_secure(RUBY_SAFE_LEVEL_CHECK(level, warning))
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+posix_serialport_impl.c:113:4: 備考: in expansion of macro ‘rb_secure’
+    rb_secure(4);
+    ^~~~~~~~~
+posix_serialport_impl.c: 関数 ‘sp_set_write_timeout_impl’ 内:
+posix_serialport_impl.c:634:7: 警告: function might be candidate for attribute ‘noreturn’ [-Wsuggest-attribute=noreturn]
+ VALUE sp_set_write_timeout_impl(self, val)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~
+posix_serialport_impl.c: 関数 ‘sp_get_write_timeout_impl’ 内:
+posix_serialport_impl.c:641:7: 警告: function might be candidate for attribute ‘noreturn’ [-Wsuggest-attribute=noreturn]
+ VALUE sp_get_write_timeout_impl(self)
+       ^~~~~~~~~~~~~~~~~~~~~~~~~
+posix_serialport_impl.c: トップレベル:
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-self-assign’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-parentheses-equality’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-constant-logical-operand’ です
+compiling serialport.c
+compiling win_serialport_impl.c
+linking shared-object serialport.so
+
+current directory: /home/cmnse04/IGSS/hq/vendor/bundle/ruby/2.6.0/gems/serialport-1.3.1/ext/native
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 serialport.so ./.gem.20201012-3514-xylhx6

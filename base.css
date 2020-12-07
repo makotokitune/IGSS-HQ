@@ -1,0 +1,60 @@
+﻿body {
+	padding: 0px !important;
+	margin: 0px 0px 0px 0px !important;
+}
+div.wrapper {
+	padding: 0px;
+	margin: 0px auto 0px auto;
+	width: 100% !important;
+	height: 470px !important;
+	background-color: #1a2d58;
+}
+div.bunkatsu6 {
+	height: 470px !important;
+	width: 33% !important;
+	float: left !important;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+div.bunkatsu6 img {
+	width: 100% !important;
+	height: auto;
+}
+
+div#footer_box {
+	width: 100%;
+	height: 140px;
+	overflow: hidden;
+	background-color: #1a2d58;
+}
+h2.moji {
+	color: #ffffff !important;
+	font-size: 100px !important;
+}
+/*-------------------------------------クリアフィックス　設定-------------------------------------------------*/
+.clearfix:after {
+	content: ".";	/* Vvf */
+	display: block;	/* ubNxvf */
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	min-height: 1px;
+}
+
+* html .clearfix {
+	height: 1px;
+	/*\*//*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+p {
+	color: white;
+	margin:100px 0 100px;
+	white-space: nowrap
+  }
